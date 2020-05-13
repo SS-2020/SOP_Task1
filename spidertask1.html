@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" type="text/css" href="spidert1sty.css">
+</head>
+<body >
+	<p id="title">BUBBLE BURST</p>
+	<div class="intro">
+		<div id="instruc">
+		<p><b>INSTRUCTIONS:</b></p>
+			<ul>
+				<li>Moving bubbles of random size gets generated anywhere on the screen</li>
+				<li>Click anywhere on the bubble to burst it</li>
+				<li>You are awarded 5 points for bursting a bubble</li>
+				<li>The rate of bubble generation increases with time</li>
+				<li>When more than 75% of screen gets filled with bubbles for more than 10 seconds, the game ends</li>
+				<li>Be quick and burst as fast as you can to keep playing!</li>
+			</ul>
+		</div>	
+		<button id="playit" onclick="playgame()"> <b>PLAY</b></button>
+	</div>	
+	<button id="replay" onClick="window.location.reload();">RESTART</button>
+	<div class="gamescreen">
+		<canvas></canvas>
+		<button id="pause" onclick="pausegame()">PAUSE</button>
+		<div id="Timer">
+			<p>TIME</p>
+			<label id="sec">0</label>
+		</div>
+		<div id="Score">
+			<p>SCORE:</p>
+			<label id="score">0</label>
+		<div>
+	</div>
+	
+	<script src="bubbleburstscript.js"></script>
+</body>
+</html>
