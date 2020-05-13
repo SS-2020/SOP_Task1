@@ -42,8 +42,7 @@ function pausegame()
 	{
 		clearInterval(game.interval);
 		el.innerHTML="PLAY";
-		if(!sec)
-			clearInterval(setsec,1000);
+		clearInterval(setsec,1000);
 	}
 	else if(el.innerHTML=="PLAY")
 	{
