@@ -1,0 +1,80 @@
+body
+{
+	background-color: #EE82EE;
+}
+.intro
+{
+	display:block;
+}
+
+#title
+{
+	font-size: 35px;
+	color: brown;
+	font-weight:bolder;
+	position: absolute;
+	left:40%;
+}
+#playit
+{
+	position:absolute;
+	left:35%;
+	top:20%;
+	color:brown;
+	background-color:blue;
+}
+#instruc
+{
+	border: 2px solid red;
+	background-color: yellow;
+	position:absolute;
+	left:75%;
+	right:3%;
+	top:25%;
+}
+canvas{
+	position: absolute;
+	top:25%;
+	left:3%;
+	width: 70%;
+	height: 65%;
+	background-color:#FF7E00;
+	border: 5px solid brown;
+}
+#pause
+{
+	position: absolute;
+	text-align: centre;
+	left:3%;
+	top: 15%;
+	font-weight:bold;
+	display: none;
+	color:brown;
+	background-color:blue;
+}
+#replay
+{
+	position: absolute;
+	text-align: centre;
+	left: 3%;
+	top: 20%;
+	font-weight:bold;
+	display: none;
+	color:brown;
+	background-color:blue;
+}
+#Timer
+{
+	position: absolute;
+	text-align: centre;
+	left: 45%;
+	top: 15%;
+}
+#Score
+{
+	position: absolute;
+	text-align: centre;
+	left: 65%;
+	top: 15%;
+}
+	
