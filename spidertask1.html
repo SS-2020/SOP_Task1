@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" type="text/css" href="spidert1sty.css">
+<title>BUBBLE BURST GAME</title>
+</head>
+<body >
+	<p id="title">BUBBLE BURST</p>
+		<div id="instruc">
+		<p><b>INSTRUCTIONS:</b></p>
+			<ul>
+				<li>Moving bubbles of random size gets generated anywhere on the screen</li>
+				<li>Click anywhere on the bubble to burst it</li>
+				<li>You are awarded 1 point for bursting a bubble and 5 points for bursting <b>ROCK BUBBLE</b>(needs 5 clicks)</li>
+				<li>The rate of bubble generation increases with time</li>
+				<li>Slow the generation by using <b>FELIX FELICES</b> which can be used for 2 times</li>
+				<li>Use <b>Gauntlets</b>,that appear rarely, to clear half of the bubbles</li>
+				<li>When more than 75% of screen gets filled with bubbles for more than 10 seconds, the game ends</li>
+				<li>Be quick and burst as fast as you can to keep playing!</li>
+			</ul>
+		</div>	
+	
+	<button id="playit" onclick="playgame()"> <b>PLAY</b></button>
+	<button id="replay" onClick="window.location.reload();">RESTART</button>
+	
+	<div id="BT">
+	  <p >   BEST SCORE</p>
+	  <p id="Bs"></p>
+	</div>		
+	
+	<canvas></canvas>
+	<audio class='burst' src='BurstBubble.mp3' type='audio/mp3'></audio>
+	<audio class='over' src='gameover.mp3' type='audio/mp3'></audio>
+	
+	<div class="gamescreen">
+		<button id="Liquidluck" onclick=Felix()></button>
+		<p id="NoOfLl"><b>2</b></p>
+		<button id="gauntlet" onclick=clearhalf()> </button>
+		<button id="pause" onclick="pausegame()">PAUSE</button>
+		<div id="Timer">
+			<p>TIME</p>
+			<label id="sec">0</label>
+		</div>
+	</div>
+	
+	<div id="Score">
+		<p>SCORE:</p>
+		<label id="score">0</label>
+	<div>
+	
+	<script src="bubbleburstscript.js"></script>
+</body>
+</html>
